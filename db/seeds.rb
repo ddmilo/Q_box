@@ -8,8 +8,12 @@
 
 
 User.destroy_all
+Quu.destroy_all
 
 User.create!(id: 1, email:'dev@box.com', password:'pookie123', first_name:'dev', last_name:'team', admin: true)
+User.create!(id: 2, email:'dev2@box.com', password:'pookie123', first_name:'Randy', last_name:'Galeano', admin: false)
 
+Quu.create!(name:'Project One', cohort:'WDI-11', user_id: 1)
+Quu.create!(name:'Project Two', cohort:'WDI-11', user_id: 2)
 
 puts "Seeds Created"
