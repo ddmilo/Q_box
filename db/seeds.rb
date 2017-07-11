@@ -7,11 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Cohort.destroy_all
 User.destroy_all
 
-Cohort.create!(id: 1, name:'WDI' )
-User.create!(id: 1, email:'dev@box.com', password:'pookie123', first_name:'dev', last_name:'team', admin: true, cohort_id: 1)
+User.create!(id: 1, email:'dev@box.com', password:'pookie123', first_name:'dev', last_name:'team', admin: true)
 
 
 puts "Seeds Created"

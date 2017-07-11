@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
    namespace :api do
     resources :users, only: [:index]
-    resources :cohorts, only: [:index]
+    resources :quus
   end
 
   root to: 'client#index'
